@@ -13,6 +13,7 @@ public class SpringbootBackendApplication {
 		SpringApplication.run(SpringbootBackendApplication.class, args);
 	}
 
+	// Managing CORS
 	@Bean
 	public WebMvcConfigurer corsConfigurer() {
 		return new WebMvcConfigurer() {
