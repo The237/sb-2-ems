@@ -18,23 +18,15 @@ public class SpringbootBackendApplication {
 	}
 
 	// Managing CORS
-<<<<<<< HEAD
-	@Bean(name = "corsConfigurer")
-=======
 	@Bean
->>>>>>> 07-deleteEmployee
 	public WebMvcConfigurer corsConfigurer() {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 				registry
-<<<<<<< HEAD
 						.addMapping("/api/v1/employees/**")
 						.allowedOrigins("http://localhost:4200")
 						.allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH");
-=======
-						.addMapping("/api/v1/employees/**");
->>>>>>> 07-deleteEmployee
 			}
 		};
 	}
